@@ -10,7 +10,7 @@ function ModalProject({ handleClose, item }) {
         <Modal handleClose={handleClose}>
             <h1 className=" font-bold">{item?.nama}</h1>
             <div className="gap-3 h-full overflow-y-auto px-3 py-5">
-                <div className="relative md:h-2/3">
+                <div className="relative h-2/3">
                     <Image
                         src={item?.img}
                         alt="gambar"
