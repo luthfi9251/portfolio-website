@@ -7,7 +7,7 @@ import Button from "./Button";
 
 export default function HeroSection({ children }) {
     return (
-        <div className="text-white md:h-[32rem] relative md:block flex flex-col-reverse items-center gap-10 md:gap-0 md:mt-20 overflow-hidden">
+        <div className="text-white md:h-[32rem] relative md:block flex flex-col-reverse items-center gap-10 md:gap-0 mt-5 md:mt-32 overflow-hidden">
             <motion.div
                 className="w-full md:w-5/12 lg:w-4/12  p-4 flex flex-col gap-2 lg:gap-3 items-start md:absolute left-14 z-10"
                 initial={{ opacity: 0, x: -10 }}
