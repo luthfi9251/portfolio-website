@@ -78,7 +78,7 @@ const jobDesk = [
     {
         title: "Front End Developer",
         img: frontendPhoto,
-        detail: "Membuat atau mengubah tampilan website agar lebih dinamis sesuai dengan harap Anda.",
+        detail: "Membuat atau mengubah tampilan website agar lebih dinamis sesuai dengan harap Anda. Anjay",
         total: "3",
     },
     {

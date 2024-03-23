@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+    nextjs:
+        container_name: portfolio-container
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000" # Port di host : Port di kontainer
+        volumes:
+            - ./public:/usr/src/app/public
+            - ./services:/usr/src/app/services
+            - ./src:/usr/src/app/src
+            - ./dataText.js:/usr/src/app/dataText.js
+        environment:
+            - GMAIL_APP_PASSWORD=uepkqhmhjzveqsgp
+            - GMAIL_EMAIL=luthfideveloper777@gmail.com
+        restart: always

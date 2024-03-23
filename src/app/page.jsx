@@ -74,7 +74,7 @@ export default function Home() {
                     // viewport={{ once: true }}
                     transition={{ duration: 0.7, delay: 0.6 }}
                 >
-                    <TitleText>What Can I Do I For You?</TitleText>
+                    <TitleText>What Can I Do For You?</TitleText>
                     <p className="text-white text-xs lg:text-sm text-justify">
                         {dataText.capabilities.text.indo}
                     </p>
@@ -86,7 +86,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div>
-                            <h2 className="text-4xl text-c-light-green">1</h2>
+                            <h2 className="text-4xl text-c-light-green">3</h2>
                             <p className="font-semibold text-sm md:text-lg">
                                 Years Experiences
                             </p>
