@@ -16,6 +16,7 @@ COPY services ./services
 COPY src ./src
 
 
+RUN npm run build
 EXPOSE 3000
-
+# CMD [ "npm", "start" ]
 CMD [ "npm", "run", "dev" ]
