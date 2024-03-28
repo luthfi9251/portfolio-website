@@ -17,3 +17,25 @@ services:
             - GMAIL_APP_PASSWORD=uepkqhmhjzveqsgp
             - GMAIL_EMAIL=luthfideveloper777@gmail.com
         restart: always
+        depends_on:
+            - db
+        networks:
+            - dev-network
+    db:
+        container_name: mysql
+        image: mysql:latest
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=luthfi123
+        volumes:
+            - db-data-local:/var/lib/mysql
+        networks:
+            - dev-network
+
+volumes:
+    db-data-local:
+
+networks:
+    dev-network:
+        name: dev-network
